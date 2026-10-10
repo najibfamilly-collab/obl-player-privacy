@@ -3,84 +3,389 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="index, follow">
-  <title>OBL Player - Privacy Policy</title>
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="Privacy Policy for OBL Player, an IPTV media player for Android and Android TV.">
+  <title>OBL Player — Privacy Policy</title>
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 850px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.7;
-      color: #222;
+    :root {
+      color-scheme: dark;
+      --bg: #0b1120;
+      --panel: #111b2e;
+      --text: #e8edf5;
+      --muted: #aab7ca;
+      --accent: #72b7ff;
+      --border: #26354b;
     }
-    h1, h2 { color: #111; }
-    table { width: 100%; border-collapse: collapse; }
-    th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
-    th { background: #f2f2f2; }
-    a { overflow-wrap: anywhere; }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    main {
+      width: min(900px, 100%);
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+
+    header {
+      margin-bottom: 28px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      line-height: 1.2;
+      letter-spacing: -0.04em;
+    }
+
+    h2 {
+      margin-top: 34px;
+      margin-bottom: 12px;
+      font-size: 1.45rem;
+      line-height: 1.35;
+    }
+
+    p, li {
+      color: var(--text);
+    }
+
+    .meta, .muted {
+      color: var(--muted);
+    }
+
+    .meta {
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    .intro {
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    ul {
+      padding-left: 24px;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      overflow-wrap: anywhere;
+    }
+
+    .table-wrap {
+      margin: 20px 0;
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      min-width: 560px;
+    }
+
+    th, td {
+      padding: 14px 16px;
+      vertical-align: top;
+      border-bottom: 1px solid var(--border);
+    }
+
+    th {
+      background: var(--panel);
+      color: var(--accent);
+      font-weight: 650;
+    }
+
+    tbody tr:last-child td {
+      border-bottom: 0;
+    }
+
+    strong {
+      color: #fff;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 24px 16px 48px;
+      }
+
+      th, td {
+        padding: 12px;
+      }
+    }
   </style>
 </head>
+
 <body>
+  <main>
+    <header>
+      <h1>OBL Player — Privacy Policy</h1>
+      <p class="meta">
+        <time datetime="2026-10-10">10 Oct 2026</time> · @Naj
+      </p>
+    </header>
 
-<h1>OBL Player — Privacy Policy</h1>
-<p><strong>Last updated: 10 October 2026</strong></p>
+    <section>
+      <h2>Summary</h2>
 
-<h2>1. Summary</h2>
-<p>This policy applies to OBL Player (package <code>com.oblplayer.tv</code>) on Android phones, tablets, Android TV, and Google TV.</p>
-<p>OBL Player is a media player that plays IPTV playlists and TV guides supplied by users. It does not provide, host, or sell TV channels or streaming content.</p>
-<ul>
-  <li>No account or sign-up is required.</li>
-  <li>The app does not intentionally include advertising, analytics, or tracking tools.</li>
-  <li>Playlists, favorites, and settings are intended to be stored on your device.</li>
-  <li>Purchases are processed by Google Play.</li>
-</ul>
+      <p class="intro">
+        OBL Player does not collect, sell or share your personal data with us.
+        Everything you add to the app stays on your own device, apart from the
+        connections the app makes to the servers you choose and to Google Play
+        for purchases.
+      </p>
 
-<h2>2. Information and How It Is Used</h2>
-<p>The app uses information you provide to operate its features:</p>
-<ul>
-  <li><strong>Playlist URLs, server addresses, and credentials:</strong> used to connect to the IPTV service you choose.</li>
-  <li><strong>Channel lists and electronic program guides (EPG):</strong> used to display channels and programs.</li>
-  <li><strong>Favorites, viewing history, playlist names, and settings:</strong> used to remember your preferences.</li>
-  <li><strong>Premium purchase status:</strong> used to determine whether Premium features are available.</li>
-</ul>
-<p>The developer does not intentionally collect these items into a separate user database. Information stored locally remains on your device. Network requests to your chosen providers and Google Play may be processed by those services.</p>
-<p>The app does not request your contacts, photos, microphone, camera, or precise location. Please check the app's actual permissions and behavior for the version you use.</p>
+      <p>
+        This policy applies to the OBL Player app (package
+        <code>com.oblplayer.tv</code>) on Android phones, tablets and Android TV /
+        Google TV. OBL Player is a media player: it plays IPTV playlists and TV
+        guides that you supply. It does not provide, host or sell any channels
+        or content.
+      </p>
 
-<h2>3. Third-Party Services</h2>
-<h3>Your IPTV Provider and EPG Source</h3>
-<p>When you load a playlist, guide, or stream, the app connects to the server addresses you enter. Your provider may process your IP address, connection details, credentials, and viewing activity under its own privacy practices. Review your provider's privacy policy.</p>
+      <ul>
+        <li>No account or sign-up is required.</li>
+        <li>No advertising, analytics or tracking tools are built into the app.</li>
+        <li>Your playlists, favorites and settings are stored only on your device.</li>
+        <li>Purchases are handled entirely by Google Play.</li>
+      </ul>
+    </section>
 
-<h3>Google Play Billing</h3>
-<p>If you purchase an annual subscription or lifetime Premium access, Google Play processes the transaction. The app uses purchase information to determine whether Premium features should be unlocked. The developer does not receive your full payment card details through the app.</p>
-<p>Read Google's Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</p>
+    <section>
+      <h2>Information we collect</h2>
 
-<h3>HLS.js Content Delivery</h3>
-<p>If the app loads the HLS.js library from a public content delivery network to play certain streams, that network service may receive your IP address and ordinary connection metadata. Whether this applies depends on how the library is included in the app.</p>
+      <p>
+        We, the developer, do not receive any of the data below. It is created
+        and kept on your device by the app.
+      </p>
 
-<h2>4. Permissions and Security</h2>
-<p>The app may use Internet access to connect to servers, network-state access to detect connectivity, and Google Play Billing for purchases. The exact permissions depend on the published app build and included libraries.</p>
-<p>No electronic storage or transmission method is completely secure. Some IPTV services may use unencrypted HTTP connections. When HTTP is used, information transmitted between your device and the server may not be encrypted in transit. Use HTTPS addresses when available and protect your account credentials.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Data</th>
+              <th scope="col">Where it lives</th>
+              <th scope="col">Why</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Playlist URLs, Xtream/server addresses and any username or
+                password you enter
+              </td>
+              <td>On your device only (app storage)</td>
+              <td>To load your channels from your provider</td>
+            </tr>
+            <tr>
+              <td>Channel list and TV guide (EPG) downloaded from your provider</td>
+              <td>On your device only</td>
+              <td>To show channels and programs</td>
+            </tr>
+            <tr>
+              <td>
+                Favorites, recently watched, last watched channel, playlist names
+                and order
+              </td>
+              <td>On your device only</td>
+              <td>To remember your choices</td>
+            </tr>
+            <tr>
+              <td>App settings (start channel, zapping mode, auto-refresh interval)</td>
+              <td>On your device only</td>
+              <td>To personalize the app</td>
+            </tr>
+            <tr>
+              <td>Premium status and purchase state</td>
+              <td>Google Play, with a small cache on your device</td>
+              <td>To unlock Premium features</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-<h2>5. Data Retention and Deletion</h2>
-<p>Information stored locally remains on your device until you delete it or remove the app's data. You may delete playlists through the app if supported, clear the app's storage in Android settings, or uninstall the app.</p>
-<p>The developer does not maintain a separate copy of locally stored playlists or credentials. Google Play and your IPTV provider may retain information under their own policies.</p>
+      <p>
+        The app does not ask for your name, email, phone number, contacts, photos,
+        microphone, camera or precise location, and it does not read any of them.
+      </p>
 
-<h2>6. Children's Privacy</h2>
-<p>OBL Player is a general-purpose media player and is not specifically directed at children under 13. The developer does not knowingly collect children's personal information directly through the app. Parents and guardians should supervise children's use of IPTV playlists and streaming sources.</p>
+      <p>
+        <strong>Free trial.</strong> The app records the date of its first launch
+        on your device to run a 30-day free trial. This date never leaves the
+        device. Uninstalling the app or clearing its data deletes it.
+      </p>
 
-<h2>7. Your Privacy Rights</h2>
-<p>Depending on your location, you may have rights to access, correct, delete, restrict, or object to certain processing of personal data, and to request data portability.</p>
-<p>You can manage information stored on your device through the app and Android settings. For information held by Google Play or your IPTV provider, contact the relevant service. For questions about this policy, use the contact details below.</p>
+      <p>
+        Android backup is turned off for the app. Your playlists and credentials
+        are not copied to cloud backups or to a new device. After a reinstall you
+        add your playlists again; Premium is restored from your Google Play
+        account.
+      </p>
+    </section>
 
-<h2>8. Changes to This Policy</h2>
-<p>This policy may be updated when app features, third-party services, or legal requirements change. Updates will be published on this page with a revised date.</p>
+    <section>
+      <h2>How we use information</h2>
 
-<h2>9. Contact</h2>
-<p><strong>Name:</strong> Hafid Najib</p>
-<p><strong>Email:</strong> <a href="mailto:HAFID.NAJIB@HOTMAIL.COM">HAFID.NAJIB@HOTMAIL.COM</a></p>
-<p><strong>Postal address:</strong> 2991 PE, Barendrecht, The Netherlands</p>
-<p><strong>Effective date:</strong> 10 October 2026</p>
+      <p>
+        The app uses the data above only to work as a player on your device:
+      </p>
 
+      <ul>
+        <li>To download and refresh your playlists and TV guide from the addresses you entered.</li>
+        <li>To play the streams you select.</li>
+        <li>To remember favorites, history and settings.</li>
+        <li>To check whether your Premium purchase is active.</li>
+      </ul>
+
+      <p>
+        We do not use your data for advertising, profiling or analytics, and we
+        do not sell, rent or share it with anyone.
+      </p>
+    </section>
+
+    <section>
+      <h2>Third-party services</h2>
+
+      <p>
+        The app connects to the following services. Each one sees your IP address
+        and the technical details of a normal network request, under its own
+        privacy policy.
+      </p>
+
+      <p>
+        <strong>Your IPTV provider and EPG source.</strong>
+        To load a playlist, guide or stream, the app contacts the server
+        addresses you entered. Your provider may log your IP address, credentials
+        and viewing activity. We have no control over this and are not responsible
+        for the provider's practices. Check your provider's privacy policy.
+      </p>
+
+      <p>
+        <strong>Google Play Billing.</strong>
+        If you buy Premium (annual subscription or lifetime purchase), Google
+        processes the payment and shares only your purchase status with the app.
+        We never see your card or payment details. See
+        <a href="https://policies.google.com/privacy"
+           target="_blank"
+           rel="noopener noreferrer">Google's Privacy Policy</a>.
+      </p>
+
+      <p>
+        <strong>Script host (hls.js).</strong>
+        To play some HLS streams the app may load the open-source hls.js library
+        from a public content delivery network when it is not bundled in the app.
+        That request exposes your IP address to the host.
+      </p>
+
+      <p>
+        OBL Player does not include advertising networks, analytics,
+        crash-reporting or social media SDKs.
+      </p>
+    </section>
+
+    <section>
+      <h2>Permissions, security and retention</h2>
+
+      <p>
+        <strong>Permissions.</strong>
+        The app asks for three Android permissions only: Internet (to reach your
+        servers), Network state (to detect whether you are online) and Google
+        Play Billing (for purchases).
+      </p>
+
+      <p>
+        <strong>Security.</strong>
+        The app blocks navigation to external sites and embedded frames, and its
+        internal bridge accepts messages only from its own content. Because many
+        IPTV servers use plain HTTP, the app allows unencrypted connections;
+        streams and playlists loaded over HTTP are not encrypted in transit. Use
+        HTTPS addresses where your provider offers them. No method of storage is
+        perfectly secure, so keep your device locked and protect your provider
+        credentials.
+      </p>
+
+      <p>
+        <strong>Retention and deletion.</strong>
+        Data stays on your device until you remove it. You can delete a playlist
+        inside the app, or erase everything by clearing the app's storage in
+        Android settings or by uninstalling it. We hold no copy and cannot
+        recover it for you.
+      </p>
+    </section>
+
+    <section>
+      <h2>Children, your rights, changes and contact</h2>
+
+      <p>
+        <strong>Children.</strong>
+        OBL Player is a general-purpose player and is not directed at children
+        under 13 (or under 16 where local law sets that age). We do not knowingly
+        collect personal data from children. Content comes from your own
+        provider, so a parent or guardian should supervise what a child watches.
+      </p>
+
+      <p>
+        <strong>Your rights.</strong>
+        Because we hold no personal data about you, there is nothing for us to
+        access, correct or delete. If you are in the European Economic Area, the
+        United Kingdom or another region with data protection law, you keep your
+        rights of access, correction, deletion, restriction, portability and
+        objection. You can exercise them over data on your device directly in
+        the app and in Android settings, and over data held by Google or your
+        IPTV provider by contacting them.
+      </p>
+
+      <p>
+        <strong>Changes.</strong>
+        If this policy changes, we will update it here and change the date at
+        the top. Material changes will also be noted in the app's Google Play
+        listing or release notes.
+      </p>
+
+      <p>
+        <strong>Contact.</strong>
+        Questions about this policy:
+        <span class="muted">[your name or company], [your contact email], [your postal address or country]</span>.
+      </p>
+
+      <p>
+        <strong>Effective date:</strong>
+        <time datetime="2026-10-10">10 October 2026</time>.
+      </p>
+    </section>
+
+    <footer>
+      OBL Player · Privacy Policy · Last updated 10 October 2026
+    </footer>
+  </main>
 </body>
 </html>
